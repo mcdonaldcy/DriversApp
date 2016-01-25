@@ -12,7 +12,11 @@ body {
   width:500px;
   height:auto;
   text-align: center;
+<<<<<<< HEAD
   background: black;
+=======
+  background:grey;
+>>>>>>> ad7f2c4921c49f07010d8cd32ccdf198853c8bd2
 }
 
 /* The ghost, nudged to maintain perfect centering */
