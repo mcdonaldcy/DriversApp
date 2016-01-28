@@ -25,3 +25,29 @@ function carwash1() {
     }
 
 }
+
+
+$('#box').click(function buttonAction() {
+  $("#dialog-confirm").html("Do you want to do the thing?");
+
+  // Define the Dialog and its properties.
+  $("#dialog-confirm").dialog({
+    resizable: false,
+    modal: true,
+    title: "Do the thing?",
+    height: 250,
+    width: 400,
+    buttons: {
+      "Yes": function() {
+        $(this).dialog('close');
+        alert("Yes, do the thing");
+      },
+      "No": function() {
+        $(this).dialog('close');
+        alert("Nope, don't do the thing");
+      }
+    }
+  });
+});
+
+$('#box').click(buttonAction);
