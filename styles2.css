@@ -17,3 +17,7 @@ h1{
 .btn{
 	float: left;
 }
+
+.btn-custom{
+  padding: 10px 0;
+}

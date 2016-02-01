@@ -42,7 +42,7 @@ if (isset($_POST['submit'])){
     $_SESSION['id'] = $userId;
     header('Location: index2.php');
   }
-  else if ($username == "" || $password == ""){
+  else if ((empty($username)) || (empty($password))){
     echo "<h4> Please fill in the fields. </h4";
   }
    else{
